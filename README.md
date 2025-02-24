@@ -68,7 +68,7 @@ cd docker-traefik-setup
 Before running Traefik, **generate a self-signed SSL certificate**:  
 ```sh
 mkdir -p certs
-openssl req -x509 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem -days 365 -nodes -subj "/CN=192.168.0.119"
+openssl req -x509 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem -days 365 -nodes -subj "/CN=YOUR_SERVER_IP"
 ```
 
 ---
@@ -81,7 +81,7 @@ sudo nano /etc/hosts
 ```
 Add the following lines:  
 ```
-192.168.0.119 traefik.local pihole.local uptime.local nextcloud.local phpmyadmin.local jellyfin.local heimdall.local
+YOUR_SERVER_IP traefik.local pihole.local uptime.local nextcloud.local phpmyadmin.local jellyfin.local heimdall.local
 ```
 💾 Save and exit.  
 
@@ -109,7 +109,7 @@ This will:
 | **phpMyAdmin**      | `https://phpmyadmin.local`         |
 | **Jellyfin**        | `https://jellyfin.local`           |
 | **Heimdall**        | `https://heimdall.local`           |
-| **Portainer**       | `https://192.168.0.119:9443`       |
+| **Portainer**       | `https://YOUR_SERVER_IP:9443`       |
 
 ---
 
@@ -170,26 +170,3 @@ This project is **open-source** and free to use under the **MIT License**.
 ✅ Want to improve it? **Fork and send a PR**!  
 
 ---
-
-## 💡 Author & Credits  
-👨‍💻 Developed by **Your Name**  
-🔗 GitHub: [yourusername](https://github.com/yourusername)  
-
----
-
-## 🔗 Upload This to GitHub  
-```sh
-git init
-git add .
-git commit -m "Initial Commit - Docker Traefik Setup"
-git branch -M main
-git remote add origin https://github.com/yourusername/docker-traefik-setup.git
-git push -u origin main
-```
-🚀 **Now your repo is live on GitHub!**  
-
----
-
-### **✅ Everything is now correctly formatted for GitHub. Just copy and paste into your `README.md` file!**  
-Let me know if you need any modifications. 🚀🔥  
-```
