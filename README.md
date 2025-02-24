@@ -158,10 +158,6 @@ ping pihole.local
 
 ### 4️⃣ **Ensure `/etc/hosts` is updated**  
 
----
-
-## 📜 License  
-This project is **open-source** and free to use under the **MIT License**.  
 
 ---
 
