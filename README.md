@@ -1,4 +1,5 @@
-Docker Setup with Traefik Reverse Proxy & Self-Signed SSL
+**Docker Setup with Traefik Reverse Proxy & Self-Signed SSL**
+
 This repository provides a Docker-based self-hosted infrastructure using Traefik as a reverse proxy, self-signed SSL certificates, and services like Pi-hole, Uptime Kuma, Nextcloud, Jellyfin, Heimdall, phpMyAdmin, MariaDB, and Portainer.
 
 🔹 Key Features:
